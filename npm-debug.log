@@ -1,0 +1,82 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/cui/Learn/node/bkread-koa',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/cui/.npm/bkread/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/cui/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/home/cui/.npm/bkread/0.0.1/package.tgz',
+10 verbose tar pack   '/home/cui/Learn/node/bkread-koa' ]
+11 verbose tarball /home/cui/.npm/bkread/0.0.1/package.tgz
+12 verbose folder /home/cui/Learn/node/bkread-koa
+13 info prepublish bkread@0.0.1
+14 verbose addLocalTarball adding from inside cache /home/cui/.npm/bkread/0.0.1/package.tgz
+15 verbose correctMkdir /home/cui/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd bkread@0.0.1
+17 verbose afterAdd /home/cui/.npm/bkread/0.0.1/package/package.json not in flight; writing
+18 verbose correctMkdir /home/cui/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /home/cui/.npm/bkread/0.0.1/package/package.json written
+20 silly publish { name: 'bkread',
+20 silly publish   version: '0.0.1',
+20 silly publish   description: 'little bkread in koa',
+20 silly publish   main: 'start.js',
+20 silly publish   scripts: { start: 'node start.js' },
+20 silly publish   keywords: [ 'koa', 'async' ],
+20 silly publish   author: { name: 'Cuisc' },
+20 silly publish   license: 'Apache-2.0',
+20 silly publish   repository: { type: 'git', url: '' },
+20 silly publish   dependencies:
+20 silly publish    { 'babel-core': '6.13.2',
+20 silly publish      'babel-polyfill': '6.13.0',
+20 silly publish      'babel-preset-es2015-node6': '0.3.0',
+20 silly publish      'babel-preset-stage-3': '6.5.0',
+20 silly publish      'koa-router': '6.0.0',
+20 silly publish      'koa-bodyparser': '3.0.0',
+20 silly publish      koa: '2.0.0' },
+20 silly publish   readme: 'ERROR: No README data found!',
+20 silly publish   _id: 'bkread@0.0.1',
+20 silly publish   _shasum: '029391fbd65331420eeea6731f3539c2b1fe1bec',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name bkread
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'bkread',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'bkread',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/bkread
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /home/cui/.npm/bkread/0.0.1/package.tgz
+29 verbose stack Error: auth required for publishing
+29 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+29 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:134:14
+29 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+29 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:104:3)
+29 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+29 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+29 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+29 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+29 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:73:5
+29 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+30 verbose cwd /home/cui/Learn/node/bkread-koa
+31 error Linux 4.4.0-57-generic
+32 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+33 error node v4.4.7
+34 error npm  v2.15.8
+35 error code ENEEDAUTH
+36 error need auth auth required for publishing
+36 error need auth You need to authorize this machine using `npm adduser`
+37 verbose exit [ 1, true ]
